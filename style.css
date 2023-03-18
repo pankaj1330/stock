@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #252525;
+    color: white;
+}
+header .navbar{
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+}
+.navbar .navlist{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.navlist .navitem{
+    cursor: pointer;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.navitem .dropdown{
+    width: 100%;
+    position: absolute;
+    top:calc(100% - 0px);
+    left: 0;
+    display: flex;
+    padding: 10px;
+    background-color: #252525;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    visibility: hidden;
+}
+.dropdown li{
+    text-align: center;
+    width: 30%;
+    line-height: 20px;
+}
+
+.navlist .navitem:hover .dropdown{
+    visibility: visible;
+    color: white;
+}
+.navlist .navitem:hover{
+    color: orange;
+}
+
+
+
+
+.hero-section .hero-content{
+    min-height: 90vh;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.hero-content .main-content{
+    max-width: 500px;
+}
+.main-content h1{
+    font-size: 2rem;
+}
+.main-content>p{
+    margin: 1rem 0;
+    font-size: 13px;
+    color: rgb(65, 65, 65);
+    margin-bottom: 2rem;
+}
+.main-content .btns button{
+    padding: 7px 0;
+    width: 120px;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px rgb(174, 174, 174);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btns .start{
+    background-color: rgb(0, 172, 0);
+    color: white;
+}
+.btns .trial{
+    background-color: rgb(223, 237, 254);
+    color: rgb(0, 172, 0);
+}
+
+.main-content .icons{
+    margin-top: 2rem;
+}
+.icons p{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 13px;
+}
+.icons i{
+    font-size: 16px;
+}
+.hero-content .image img{
+    width: 400px;
+}
+
+
+
+.main-div{
+    max-width: 1300px;
+    margin: auto;
+}
+.main-div article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.main-div article img{
+    width: 400px;
+}
+.main-div article .content{
+    width: 500px;
+}
+.content h1{
+    margin-bottom: 2rem;
+}
+.content p{
+    margin-bottom: 1.5rem;
+    line-height: 1.8rem;
+    font-size: .9rem;
+}
+.discover{
+    padding: 8px;
+    width: 150px;
+    background-color: rgb(0, 150, 0);
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.stocks-cards>h3{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    margin: 2rem 0;
+    padding: 1rem 3px;
+    letter-spacing: 1px;
+}
+.stocks-cards .cards{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cards .card{
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(176, 176, 176);
+}
+.card .top{
+    position: relative;
+}
+.card .top h4{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(4, 4, 176);
+    display: inline-block;
+}
+.card .top span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: red;
+    font-size: 10px;
+    border: 1px solid grey;
+    padding: 4px 8px;
+}
+
+.card .time p{
+    display: inline-block;
+    padding: 16px 5px;
+    font-size: 12px;
+}
+.card .time p i{
+    color: grey;
+}
+
+.card .text{
+    padding: 5px;
+    font-size: 13px;
+    letter-spacing: .3px;
+}
+
+.card .mentors{
+    padding: 5px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .circles .spans {
+    margin-bottom: 1rem;
+    position: relative;
+}
+.card .circles .spans span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+.spans span:nth-child(1){
+    left: 0;
+    background-color: red;
+}
+.spans span:nth-child(2){
+    left: 14px;
+    background-color: blue;
+}
+.spans span:nth-child(3){
+    left: 28px;
+    background-color: green;
+}
+.spans span:nth-child(4){
+    left: 42px;
+    background-color: yellow;
+}
+
+
+.mentors .progress .progress-bar{
+    width: 200px;
+    height: 10px;
+    background-color: rgb(211, 212, 211);
+    border-radius: 5px;
+    position: relative;
+}
+.progress-bar .green{
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    background-color: rgb(1, 179, 1);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .btn{
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-bottom: .3rem;
+}
+.card .btn .explore{
+    padding: 7px;
+    background-color: rgb(64, 114, 254);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    width: 260px;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+
+.trading>h3{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    margin: 2rem 0;
+    padding: 1rem 3px;
+    letter-spacing: 1px;
+}
+.trading>h4{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.trading article{
+    max-width: 1300px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 2rem;
+}
+.trading article img{
+    width: 600px;
+}
+.trading article .list{
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+}
+.trading article .lists .list li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.trading .explore{
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-top: 1.5rem;
+    border: none;
+    color: white;
+    background-color: rgb(248, 60, 60);
+}
+
+.trading .article2{
+    max-width: 800px;
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: rgb(126, 126, 254);
+    border-radius: 4px;
+}
+.article2 img{
+    max-width: 300px;
+    border-radius: 8px;
+}
+.article2 .article-content{
+    max-width: 300px;
+    color: white;
+}
+.article2 .article-content h2{
+    font-size: 1rem;
+}
+
+
+.benefits h1{
+    text-align: center;
+    margin: 2rem 0;
+    text-decoration: underline;
+}
+
+.benefits .benefits-items{
+    max-width: 1300px;
+    margin:2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.benefits-items .benefit-item{
+    width: 300px;
+    padding: 5px;
+}
+.benefit-item i{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+.benefit-item h3{
+    font-size: 1rem;
+    margin: .8rem 0;
+}
+.benefit-item p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.finance h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.finance .finance-items{
+    max-width: 1300px;
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.finance-items .finance-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 400px;
+}
+.finance-items .finance-item span{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+.finance-item:nth-child(1) span{
+    background-color: rgb(255, 130, 130);
+}
+.finance-item:nth-child(2) span{
+    background-color: rgb(128, 128, 255);
+}
+.finance-item:nth-child(3) span{
+    background-color: rgb(255, 211, 129);
+}
+.finance-item:nth-child(4) span{
+    background-color: rgb(128, 255, 128);
+}
+.finance-item:nth-child(5) span{
+    background-color: rgb(255, 255, 127);
+}
+.finance-item:nth-child(6) span{
+    background-color: rgb(255, 129, 255);
+}
+
+
+.helpto{
+    background-color: rgba(3, 3, 178, 0.926);
+    margin-bottom: 2rem;
+    padding: 2rem 10px;
+}
+.helpto h1{
+    text-align: center;
+    margin: 1rem 0;
+    color: white;
+    margin-bottom: 3rem;
+}
+.helpto .help-list{
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.helpto .help-list ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.helpto .help-list ul li{
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    width: 40%;
+}
+
+
+.freq-asked-qsns h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+.freq-asked-qsns .qsns{
+    max-width: 900px;
+    margin: auto;
+}
+.qsns .qsn{
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.qsn h4{
+    margin: 16px 0;
+}
+.qsn .toggle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.qsn .ans{
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 22px;
+}
+.hideans{
+    display: none;
+}
+
+footer{
+    background-color: rgb(242, 242, 242);
+}
+footer .footer{
+    padding: 20px 0;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .links ul{
+    list-style: none;
+}
+.links ul li{
+    font-size: 13px;
+    line-height: 22px;
+}
+.career{
+    padding: 8px 32px;
+    border: none;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+
